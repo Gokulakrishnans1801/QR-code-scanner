@@ -1,0 +1,71 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(34, 164, 195);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 164, 195, 1) 41%,
+    rgba(99, 129, 223, 1) 60%
+  );
+  display: flex;
+  justify-content: center;
+}
+.main-container {
+  width: 600px;
+  background-color: white;
+  padding: 20px 30px;
+  margin-top: 10px;
+}
+.main-container p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+}
+.search-container input {
+  flex: 5;
+  height: 50px;
+  border: 1px solid grey;
+  outline: 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+.search-container button {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+  height: 50px;
+  background-color: rgba(99, 129, 223, 1);
+  color: white;
+  outline: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 5px;
+}
+#qr-container {
+  width: 200px;
+  border-radius: 6px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 1s;
+  margin: auto;
+}
+#qr-container.addClassName{
+  max-height: 380px;
+  margin:20px auto;
+  border:1px solid grey;
+  transition: 1s;
+
+}
+#qr-container img{
+    width: 100%;
+    padding: 5px;
+}
